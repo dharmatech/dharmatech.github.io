@@ -79,7 +79,6 @@
 <script>
     const ctx = document.getElementById('myChart');
     new Chart(ctx, {
-  "type": "bar",
   "data": {
     "labels": [
       "2022-05-05",
@@ -333,7 +332,6 @@
     ],
     "datasets": [
       {
-        "label": "NLSHO",
         "data": [
           5.694354,
           5.670031,
@@ -583,11 +581,10 @@
           5.268082,
           5.276209,
           5.224656
-        ]
+        ],
+        "label": "NLSHO"
       },
       {
-        "hidden": true,
-        "label": "SHO",
         "data": [
           8.482597,
           8.482597,
@@ -837,11 +834,11 @@
           7.843852,
           7.843852,
           7.843852
-        ]
+        ],
+        "label": "SHO",
+        "hidden": true
       },
       {
-        "hidden": true,
-        "label": "RRP",
         "data": [
           1.844762,
           1.861866,
@@ -1091,11 +1088,11 @@
           2.279561,
           2.273926,
           2.325479
-        ]
+        ],
+        "label": "RRP",
+        "hidden": true
       },
       {
-        "hidden": true,
-        "label": "TGA",
         "data": [
           0.943481,
           0.9507,
@@ -1345,23 +1342,26 @@
           0.296209,
           0.293717,
           0.293717
-        ]
+        ],
+        "label": "TGA",
+        "hidden": true
       }
     ]
   },
   "options": {
-    "scales": {
-      "y": {
-        "beginAtZero": false
-      }
-    },
     "plugins": {
       "title": {
         "text": "Net Liquidity Components (trillions USD)",
         "display": true
       }
+    },
+    "scales": {
+      "y": {
+        "beginAtZero": false
+      }
     }
-  }
+  },
+  "type": "bar"
 });
 </script>
             </div>
