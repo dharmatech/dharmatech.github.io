@@ -79,10 +79,8 @@
 <script>
     const ctx = document.getElementById('myChart');
     new Chart(ctx, {
-  "type": "line",
   "data": {
     "labels": [
-      "2022-05-05",
       "2022-05-06",
       "2022-05-09",
       "2022-05-10",
@@ -333,10 +331,10 @@
     ],
     "datasets": [
       {
-        "label": "SPX",
+        "pointRadius": 2,
         "borderColor": "#4E79A7",
+        "label": "SPX",
         "data": [
-          4147.0,
           4123.0,
           3991.0,
           4001.0,
@@ -584,14 +582,13 @@
           4056.0,
           4135.0,
           4169.0
-        ],
-        "pointRadius": 2
+        ]
       },
       {
-        "label": "Fair Value",
+        "pointRadius": 2,
         "borderColor": "#F28E2B",
+        "label": "Fair Value",
         "data": [
-          3994.0,
           3970.0,
           3961.0,
           3977.0,
@@ -839,14 +836,13 @@
           3568.0,
           3576.0,
           3525.0
-        ],
-        "pointRadius": 2
+        ]
       },
       {
-        "label": "Low",
+        "pointRadius": 2,
         "borderColor": "#62ae67",
+        "label": "Low",
         "data": [
-          3794.0,
           3770.0,
           3761.0,
           3777.0,
@@ -1094,14 +1090,13 @@
           3368.0,
           3376.0,
           3325.0
-        ],
-        "pointRadius": 2
+        ]
       },
       {
-        "label": "High",
+        "pointRadius": 2,
         "borderColor": "#f06464",
+        "label": "High",
         "data": [
-          4294.0,
           4270.0,
           4261.0,
           4277.0,
@@ -1349,18 +1344,18 @@
           3868.0,
           3876.0,
           3825.0
-        ],
-        "pointRadius": 2
+        ]
       }
     ]
   },
   "options": {
+    "scales": {},
     "title": {
       "text": "SPX Fair Value (NLSHO based)",
       "display": true
-    },
-    "scales": {}
-  }
+    }
+  },
+  "type": "line"
 });
 </script>
             </div>
